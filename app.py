@@ -29,25 +29,18 @@ MEDIA_SOCIAL = {
 }
 
 PROJETOS = {
-    " 💹  Aplicação de Machine Learning em Modelos de Credit Scoring" : "https://github.com/laurindodumba/Risco-de-Credito",
+     
+    " ⭐ Aplicação de Machine Learning em Modelos de Credit Scoring" : "https://github.com/laurindodumba/Risco-de-Credito",
 
-    "  Projeto Segmentação de Cliente ": "https://github.com/laurindodumba/-PROJETO-DE_CIENCIA-DE-DADOS-SEGMENTACAO",
-
+    " ⭐ Projeto Segmentação de Cliente ": "https://github.com/laurindodumba/-PROJETO-DE_CIENCIA-DE-DADOS-SEGMENTACAO",
 
     " ⭐ Contador de plástico": "https://github.com/laurindodumba/Contator-de-pl-sticos-usando-rede-neurais-e-YOLOV8",
     
+    " ⭐ Hackaton ": "https://github.com/laurindodumba/Hackaton-Ciencia-de-Dados",
 
-    " ✔️ Hackaton ": "https://github.com/laurindodumba/Hackaton-Ciencia-de-Dados",
+    " ⭐ Análise de Crédito " : "https://github.com/laurindodumba/-PROJETO-DE_CIENCIA-DE-DADOS-ANALISE-DE-CREDITO",
 
-
-    " ✔️ Projeto Análise de Crédito " : "https://github.com/laurindodumba/-PROJETO-DE_CIENCIA-DE-DADOS-ANALISE-DE-CREDITO",
-
-
-    " ✔️ Aplicativo Finaneiro ": "https://github.com/laurindodumba/Aplicativo_Financeiro",
-
-    " ✔️  Web Aplicativo - Machine Learning ": "https://github.com/laurindodumba/Aplica-oWEB_MachineLearning" ,
-
-    " ✔️  ETL API BANCO MUNDIAL ": "https://github.com/laurindodumba/ETL-API-BANCO-MUNDIAL",
+    " ⭐  ETL API BANCO MUNDIAL ": "https://github.com/laurindodumba/ETL-API-BANCO-MUNDIAL",
 
 
 
