@@ -4,8 +4,8 @@ from PIL import Image
 
 
 
-# Cabeçalho
-st.header("Meu Portfólio")
+# # Cabeçalho
+# st.header("Meu Portfólio")
 
 # Barra Lateral
 # st.sidebar.title("Menu")
