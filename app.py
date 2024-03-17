@@ -4,6 +4,28 @@ from PIL import Image
 
 
 
+# Cabeçalho
+st.header("Meu Portfólio")
+
+# Barra Lateral
+st.sidebar.title("Menu")
+st.sidebar.markdown("Selecione uma opção abaixo:")
+
+opcao = st.sidebar.radio("Navegação", ["Home", "Projetos", "Sobre"])
+
+if opcao == "Home":
+    st.title("Página Inicial")
+    # Aqui você pode adicionar o conteúdo da página inicial
+elif opcao == "Projetos":
+    st.title("Projetos")
+    # Aqui você pode adicionar o conteúdo da página de projetos
+elif opcao == "Sobre":
+    st.title("Sobre")
+    # Aqui você pode adicionar o conteúdo da página "Sobre"
+
+
+
+
 #Configurações Estruturais~
 diretorio = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 arquivo_css = diretorio / "styles" / "main.css"
@@ -39,7 +61,7 @@ PROJETOS = {
     " ⭐ Hackaton ": "https://github.com/laurindodumba/Hackaton-Ciencia-de-Dados",
 
     " ⭐ Análise de Crédito " : "https://github.com/laurindodumba/-PROJETO-DE_CIENCIA-DE-DADOS-ANALISE-DE-CREDITO",
-    
+
     " ⭐  ETL API BANCO MUNDIAL ": "https://github.com/laurindodumba/ETL-API-BANCO-MUNDIAL",
 
 
@@ -159,3 +181,9 @@ with col2:
         - 🚀 Mestrando em Ciência da Computação
         """
     )
+
+
+
+
+# Rodapé
+st.footer("© 2024 Laurindo Dumba - Todos os direitos reservados.")
