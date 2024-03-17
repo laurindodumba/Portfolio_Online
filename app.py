@@ -11,17 +11,17 @@ st.header("Meu Portfólio")
 st.sidebar.title("Menu")
 st.sidebar.markdown("Selecione uma opção abaixo:")
 
-opcao = st.sidebar.radio("Navegação", ["Home", "Projetos", "Sobre"])
+# opcao = st.sidebar.radio("Navegação", ["Home", "Projetos", "Sobre"])
 
-if opcao == "Home":
-    st.title("Página Inicial")
-    # Aqui você pode adicionar o conteúdo da página inicial
-elif opcao == "Projetos":
-    st.title("Projetos")
-    # Aqui você pode adicionar o conteúdo da página de projetos
-elif opcao == "Sobre":
-    st.title("Sobre")
-    # Aqui você pode adicionar o conteúdo da página "Sobre"
+# if opcao == "Home":
+#     st.title("Página Inicial")
+#     # Aqui você pode adicionar o conteúdo da página inicial
+# elif opcao == "Projetos":
+#     st.title("Projetos")
+#     # Aqui você pode adicionar o conteúdo da página de projetos
+# elif opcao == "Sobre":
+#     st.title("Sobre")
+#     # Aqui você pode adicionar o conteúdo da página "Sobre"
 
 
 
