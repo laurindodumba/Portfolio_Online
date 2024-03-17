@@ -106,7 +106,7 @@ with col2:
 
             - 💻 Programação (Python PySpark, R, SQL)
 
-            - ⚙️ Django, Flask, Databricks, DevOps, Databricks, Git Hub, Docker
+            - ⚙️ Django, Flask, Databricks, DevOps, Databricks, Git Hub, Docker, MLFLOW
 
             - ☁️ Microsoft Azure, AWS
     """
