@@ -185,5 +185,5 @@ with col2:
 
 
 
-# Rodapé
-st.footer("© 2024 Laurindo Dumba - Todos os direitos reservados.")
+# # Rodapé
+# st.footer("© 2024 Laurindo Dumba - Todos os direitos reservados.")
