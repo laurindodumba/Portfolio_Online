@@ -39,7 +39,7 @@ PROJETOS = {
     " ⭐ Hackaton ": "https://github.com/laurindodumba/Hackaton-Ciencia-de-Dados",
 
     " ⭐ Análise de Crédito " : "https://github.com/laurindodumba/-PROJETO-DE_CIENCIA-DE-DADOS-ANALISE-DE-CREDITO",
-
+    
     " ⭐  ETL API BANCO MUNDIAL ": "https://github.com/laurindodumba/ETL-API-BANCO-MUNDIAL",
 
 
