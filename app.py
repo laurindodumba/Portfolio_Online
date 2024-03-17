@@ -8,8 +8,8 @@ from PIL import Image
 st.header("Meu Portfólio")
 
 # Barra Lateral
-st.sidebar.title("Menu")
-st.sidebar.markdown("Selecione uma opção abaixo:")
+# st.sidebar.title("Menu")
+# st.sidebar.markdown("Selecione uma opção abaixo:")
 
 # opcao = st.sidebar.radio("Navegação", ["Home", "Projetos", "Sobre"])
 
