@@ -30,9 +30,9 @@ MEDIA_SOCIAL = {
 
 PROJETOS = {
      
-    " ⭐ Aplicação de Machine Learning em Modelos de Credit Scoring" : "https://github.com/laurindodumba/Risco-de-Credito",
+    " ⭐ Credit Scoring" : "https://github.com/laurindodumba/Risco-de-Credito",
 
-    " ⭐ Projeto Segmentação de Cliente ": "https://github.com/laurindodumba/-PROJETO-DE_CIENCIA-DE-DADOS-SEGMENTACAO",
+    " ⭐ Segmentação de Cliente ": "https://github.com/laurindodumba/-PROJETO-DE_CIENCIA-DE-DADOS-SEGMENTACAO",
 
     " ⭐ Contador de plástico": "https://github.com/laurindodumba/Contator-de-pl-sticos-usando-rede-neurais-e-YOLOV8",
     
