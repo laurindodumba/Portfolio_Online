@@ -110,13 +110,13 @@ with col2:
     st.subheader("Experiências")
     st.write(
     """
-        	📌 +2 anos de experiências em Tecnologia da informação sobre tudo nas seguintes áreas:
+        	 +4 anos de experiências em Tecnologia da informação sobre tudo nas seguintes áreas:
 
             ⭐ Engenharia de Dados
 
-            ⭐ Ciência de Dados
-
             ⭐ Machine Learning
+
+            ⭐ Desenvolvimento Mobile
     """
     )
 
@@ -126,11 +126,11 @@ with col2:
     st.write(
     """
 
-            - 💻 Programação (Python PySpark, R, SQL)
-
+            - 💻 Programação (Python PySpark, R, SQL, Kotlin)
+            - 💻 Programação Mobile (ANDROID & IOS)
             - ⚙️ Django, Flask, Databricks, DevOps, Databricks, Git Hub, Docker, MLFLOW
 
-            - ☁️ Microsoft Azure, AWS
+            - ☁️ Microsoft: Azure, AWS
     """
     )
 
@@ -148,6 +148,8 @@ with col2:
            - 🏅 DP 900
 
            - 🏅 AZ -220 IOT Developer Specialtly
+           
+           - 🏅 AI - 102 AI Enginner Associate
         """
     )
 
@@ -172,13 +174,15 @@ with col2:
     st.subheader("QUALIFICAÇÕES ACADÊMICAS")
     st.write(
         """
-        - 🚀 Engenheiro de Controle e Automação
+        - Engenheiro de Controle e Automação
 
-        - 🚀 Pós Graduação em Ciência de Dados e Big Data
+        - Pós Graduação em Ciência de Dados e Big Data
 
-        - 🚀 Pós Graduação em Inteligência Artificial e Computacional
+        - Pós Graduação em Inteligência Artificial e Computacional
+        
+        - Pós Graduação em Programação de Dispositivos Móveis
 
-        - 🚀 Mestrando em Ciência da Computação
+        - Mestrando em Ciência da Computação
         """
     )
 
