@@ -126,11 +126,12 @@ with col2:
     st.write(
     """
 
-            - 💻 Programação (Python PySpark, R, SQL, Kotlin)
-            - 💻 Programação Mobile (ANDROID & IOS)
-            - ⚙️ Django, Flask, Databricks, DevOps, Databricks, Git Hub, Docker, MLFLOW
+            - 💻 Linguagem de Programação: Python, PySpark, R, SQL, Kotlin
+            - 💻 Programação: Mobile (ANDROID & IOS)
+            - 🛒 FrameWork: Django, Flask, JetPack Compose, MLFLOW
+            - ⚙️ Ferrementas: Databricks, DevOps, Databricks, Git Hub, Docker
 
-            - ☁️ Microsoft: Azure, AWS
+            - ☁️ Nuvem: Azure, AWS
     """
     )
 
