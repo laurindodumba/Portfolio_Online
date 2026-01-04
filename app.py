@@ -116,7 +116,7 @@ with col2:
 
             ⭐ Machine Learning
 
-            ⭐ Desenvolvimento Mobile
+            ⭐ Desenvolvimento de Dispositivos Móveis
     """
     )
 
@@ -126,12 +126,15 @@ with col2:
     st.write(
     """
 
-            - 💻 Linguagem de Programação: Python, PySpark, R, SQL, Kotlin
-            - 💻 Programação: Mobile (ANDROID & IOS)
-            - 🛒 FrameWork: Django, Flask, JetPack Compose, MLFLOW
-            - ⚙️ Ferrementas: Databricks, DevOps, Databricks, Git Hub, Docker
+            - 💻 Linguagem de Programação: Python, PySpark, R, SQL, Kotlin.
+            
+            - 💻 Programação: Mobile (ANDROID & IOS).
+            
+            - 🛒 FrameWork: Django, Flask, JetPack Compose, MLFLOW.
+            
+            - ⚙️ Ferrementas: Databricks, DevOps, Databricks, Git Hub, Docker.
 
-            - ☁️ Nuvem: Azure, AWS
+            - ☁️ Nuvem: Azure, AWS.
     """
     )
 
