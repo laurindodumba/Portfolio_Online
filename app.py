@@ -38,7 +38,7 @@ arquivo_imagem = diretorio / "assets" / "l.png"
 TITULO = "Curriculum  | LAURINDO DUMBA"
 NOME = "Laurindo Dumba"
 DESCRIÇÃO = """
- Cientista de dados, Engenheiro de Machine Learning, aprendiz de desenvolvimento WEB.
+ Engenharia de Dados, Machine Leaning e Desenvolvimento Mobile.
 
 """
 
@@ -130,7 +130,7 @@ with col2:
             
             - 💻 Programação: Mobile (ANDROID & IOS).
             
-            - 🛒 FrameWork: Django, Flask, JetPack Compose, MLFLOW.
+            - 💻 FrameWork: Django, Flask, JetPack Compose, MLFLOW.
             
             - ⚙️ Ferrementas: Databricks, DevOps, Databricks, Git Hub, Docker.
 
@@ -186,7 +186,7 @@ with col2:
         
         - Pós Graduação em Programação de Dispositivos Móveis
 
-        - Mestrando em Ciência da Computação
+        - Mestrando em Ciência da Computação Aplicada
         """
     )
 
