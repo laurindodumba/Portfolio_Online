@@ -134,7 +134,7 @@ with col2:
             
             - ⚙️ Ferrementas: Databricks, DevOps, Databricks, Git Hub, Docker.
 
-            - ☁️ Nuvem: Azure, AWS.
+            - ☁️ Cloud Computing: Azure, AWS
     """
     )
 
@@ -185,6 +185,8 @@ with col2:
         - Pós Graduação em Inteligência Artificial e Computacional
         
         - Pós Graduação em Programação de Dispositivos Móveis
+
+        - Pós Graduando em IOT - Internet das Coisas
 
         - Mestrando em Ciência da Computação Aplicada
         """
