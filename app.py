@@ -77,7 +77,9 @@ if pdf_data:
 
 # MÍDIAS SOCIAIS
 st.write("#")
-st.subheader("Mídias Sociais")
+# st.subheader("Mídias Sociais")
+st.markdown('<h3 class="title-line">Mídias Sociais</h3>', unsafe_allow_html=True)
+
 
 MEDIA_SOCIAL = {
     "LinkedIn": "https://www.linkedin.com/in/laurindo-vilonga-dumba-45b214102/",
@@ -91,7 +93,9 @@ for i, (plat, link) in enumerate(MEDIA_SOCIAL.items()):
 
 # EXPERIÊNCIAS
 st.write("#")
-st.subheader("Experiências Profissionais")
+# st.subheader("Experiências Profissionais")
+st.markdown('<h3 class="title-line">Experiências Profissionais</h3>', unsafe_allow_html=True)
+
 
 st.write("""
 +4 anos de experiência em TI, atuando principalmente em:
@@ -104,7 +108,8 @@ st.write("""
 
 # SKILLS
 st.write("#")
-st.subheader("Qualificações Técnicas")
+# st.subheader("Qualificações Técnicas")
+st.markdown('<h3 class="title-line">Qualificações Técnicas</h3>', unsafe_allow_html=True)
 
 st.write("""
 - 💻 Linguagens: Python, PySpark, R, SQL, Kotlin  
@@ -115,7 +120,8 @@ st.write("""
 
 # PROJETOS
 st.write("#")
-st.subheader("Projetos Desenvolvidos")
+# st.subheader("Projetos Desenvolvidos")
+st.markdown('<h3 class="title-line">Projetos Desenvolvidos</h3>', unsafe_allow_html=True)
 
 PROJETOS = {
     "Credit Scoring": "https://github.com/laurindodumba/Risco-de-Credito",
@@ -162,5 +168,5 @@ st.write("""
 """)
 
 # RODAPÉ
-st.write("#")
-st.caption("© 2024 - Portfólio Online de Laurindo Dumba")
+# st.write("#")
+# st.caption("© 2024 - Portfólio Online de Laurindo Dumba")
