@@ -26,36 +26,35 @@ from PIL import Image
 
 
 
-#Configurações Estruturais~
+#Configurações Estruturais
+import streamlit as st
+import base64
+from pathlib import Path
+
+# Configurações Estruturais
 diretorio = Path(__file__).parent if "__file__" in locals() else Path.cwd()
-arquivo_css = diretorio / "styles" / "main.css"
-arquivo_pdf = diretorio / "assets" / "Curriculo.pdf"
-# arquivo_imagem = diretorio / "assets" / "l.png"
-# diretorio = Path(__file__).parent
 arquivo_imagem = diretorio / "assets" / "l.png"
 
 # Converter imagem para base64 corretamente
-with open(arquivo_imagem, "rb") as img_file:
-    encoded = base64.b64encode(img_file.read()).decode()
+encoded = base64.b64encode(arquivo_imagem.read_bytes()).decode()
 
-st.markdown(
-    f"""
-    <style>
-    .img-arredondada {{
-        border-radius: 50%;
-        width: 200px;
-        height: 200px;
-        object-fit: cover;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
-    }}
-    </style>
+html = f"""
+<style>
+.rounded-img {{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    margin: auto;
+}}
+</style>
 
-    <img class="img-arredondada" src="data:image/png;base64,{encoded}">
-    """,
-    unsafe_allow_html=True
-)
+<img class="rounded-img" src="data:image/png;base64,{encoded}">
+"""
+
+st.markdown(html, unsafe_allow_html=True)
+
 
 #Configurações gerais das informações
 
