@@ -2,16 +2,7 @@ from pathlib import Path
 import streamlit as st
 import base64
 
-
-def show_section(title, content_function):
-    st.markdown(f'<div class="section-circle">', unsafe_allow_html=True)
-    st.markdown(f'<h3 class="section-title">{title}</h3>', unsafe_allow_html=True)
-
-    content_function()
-
-    st.markdown('</div>', unsafe_allow_html=True)
-
-# ---------- CONFIGURAÇÕES ----------
+# ---------- CONFIGURAÇÕES E CAMINHOS ----------
 
 diretorio = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 
@@ -21,21 +12,26 @@ arquivo_imagem = diretorio / "assets" / "l.png"
 
 st.set_page_config(page_title="Portfólio - Laurindo Dumba", layout="centered")
 
-# ---------- CARREGAR CSS ----------
+# ---------- FUNÇÕES REUTILIZÁVEIS ----------
 
-with open(arquivo_css) as f:
-    st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
+def load_css(path):
+    if path.exists():
+        with open(path) as f:
+            st.markdown(f"<style>{f.read()}</style>", unsafe_allow_html=True)
 
-# ---------- FUNÇÕES ----------
+def show_rounded_image(path, size=250):
+    if not path.exists():
+        st.error("Imagem não encontrada no diretório assets.")
+        return
 
-def show_rounded_image(path):
     encoded = base64.b64encode(path.read_bytes()).decode()
+
     html = f"""
     <style>
     .rounded-img {{
         border-radius: 50%;
-        width: 250px;
-        height: 250px;
+        width: {size}px;
+        height: {size}px;
         object-fit: cover;
         display: block;
         margin: auto;
@@ -52,33 +48,22 @@ def load_pdf(path):
             return f.read()
     return None
 
-def show_section(title, content_function):
-    st.markdown('<div class="section-circle">', unsafe_allow_html=True)
-    st.markdown(f'<h3 class="section-title">{title}</h3>', unsafe_allow_html=True)
-    content_function()
-    st.markdown('</div>', unsafe_allow_html=True)
+# ---------- CARREGANDO ARQUIVOS ----------
 
+load_css(arquivo_css)
 pdf_data = load_pdf(arquivo_pdf)
 
-# ---------- DADOS GERAIS ----------
+# ---------- CONTEÚDO DA PÁGINA ----------
 
-MEDIA_SOCIAL = {
-    "LinkedIn": "https://www.linkedin.com/in/laurindo-vilonga-dumba-45b214102/",
-    "Medium": "https://medium.com/@dumbalvd",
-    "GitHub": "https://github.com/laurindodumba"
-}
-
-PROJETOS = {
-    "Credit Scoring": "https://github.com/laurindodumba/Risco-de-Credito",
-    "Segmentação de Cliente": "https://github.com/laurindodumba/-PROJETO-DE_CIENCIA-DE-DADOS-SEGMENTACAO",
-    "ETL API Banco Mundial": "https://github.com/laurindodumba/ETL-API-BANCO-MUNDIAL"
-}
-
-# CABEÇALHO
+# CABEÇALHO COM IMAGEM
 show_rounded_image(arquivo_imagem)
 
 st.title("Laurindo Dumba")
-st.write("Engenharia de Dados | Machine Learning | Desenvolvimento Mobile")
+
+st.write("""
+Engenharia de Dados | Machine Learning | Desenvolvimento Mobile
+""")
+
 st.write("✉️ E-mail: dumbalvd@gmail.com")
 
 if pdf_data:
@@ -89,54 +74,86 @@ if pdf_data:
         mime="application/pdf"
     )
 
-# ---------- CONTEÚDOS POR SEÇÃO ----------
+# MÍDIAS SOCIAIS
+st.write("#")
+st.subheader("Mídias Sociais")
 
-def conteudo_social():
-    cols = st.columns(len(MEDIA_SOCIAL))
-    for i, (plat, link) in enumerate(MEDIA_SOCIAL.items()):
-        cols[i].markdown(f"[{plat}]({link})")
+MEDIA_SOCIAL = {
+    "LinkedIn": "https://www.linkedin.com/in/laurindo-vilonga-dumba-45b214102/",
+    "Medium": "https://medium.com/@dumbalvd",
+    "GitHub": "https://github.com/laurindodumba"
+}
 
-def conteudo_experiencias():
-    st.write("""
-⭐ Mais de 4 anos atuando em TI  
-⭐ Projetos de Machine Learning  
-⭐ APIs com FastAPI  
-⭐ Desenvolvimento Mobile com Compose  
+cols = st.columns(len(MEDIA_SOCIAL))
+for i, (plat, link) in enumerate(MEDIA_SOCIAL.items()):
+    cols[i].markdown(f"[{plat}]({link})")
+
+# EXPERIÊNCIAS
+st.write("#")
+st.subheader("Experiências")
+
+st.write("""
++4 anos de experiência em TI, com foco em:
+
+⭐ Engenharia de Dados  
+⭐ Machine Learning  
+⭐ Desenvolvimento Mobile  
+⭐ Cloud Computing (Azure & AWS)
 """)
 
-def conteudo_skills():
-    st.write("""
-- Python, PySpark, R, SQL, Kotlin  
-- Django, Flask, FastAPI  
-- Azure e AWS  
-- Docker e GitHub  
+# SKILLS
+st.write("#")
+st.subheader("Skills Técnicas")
+
+st.write("""
+- 💻 Linguagens: Python, PySpark, R, SQL, Kotlin  
+- ⚙️ Frameworks: Django, Flask, FastAPI, Jetpack Compose  
+- ☁️ Cloud: Azure, AWS  
+- 🐳 DevOps: Docker, GitHub, Databricks  
 """)
 
-def conteudo_projetos():
-    st.write("-----")
-    cols = st.columns(len(PROJETOS))
-    for i, (nome, link) in enumerate(PROJETOS.items()):
-        cols[i].markdown(f"[{nome}]({link})")
+# PROJETOS COM SCROLL LATERAL
+st.write("#")
+st.subheader("Projetos Desenvolvidos")
 
-def conteudo_academico():
-    st.write("""
+PROJETOS = {
+    "Credit Scoring": "https://github.com/laurindodumba/Risco-de-Credito",
+    "Segmentação de Cliente": "https://github.com/laurindodumba/-PROJETO-DE_CIENCIA-DE-DADOS-SEGMENTACAO",
+    "ETL API Banco Mundial": "https://github.com/laurindodumba/ETL-API-BANCO-MUNDIAL",
+    "Análise de Crédito": "https://github.com/laurindodumba/-PROJETO-DE_CIENCIA-DE-DADOS-ANALISE-DE-CREDITO",
+}
+
+scroll_html = """
+<style>
+.scrolling-wrapper {
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.scrolling-wrapper button {
+    display: inline-block;
+    margin-right: 10px;
+}
+</style>
+"""
+
+st.markdown(scroll_html, unsafe_allow_html=True)
+
+with st.container():
+    st.markdown('<div class="scrolling-wrapper">', unsafe_allow_html=True)
+    for nome, link in PROJETOS.items():
+        st.markdown(f'<a href="{link}" target="_blank"><button>{nome}</button></a>', unsafe_allow_html=True)
+    st.markdown('</div>', unsafe_allow_html=True)
+
+# QUALIFICAÇÕES ACADÊMICAS
+st.write("#")
+st.subheader("Qualificações Acadêmicas")
+
+st.write("""
 🎓 Engenheiro de Controle e Automação  
-🎓 Pós em Ciência de Dados  
+🎓 Pós em Ciência de Dados e Big Data  
 🎓 Pós em Inteligência Artificial  
 🎓 Mestrando em Ciência da Computação  
 """)
-
-# MOSTRANDO AS SEÇÕES EM REGIÕES CIRCULARES
-
-show_section("Mídias Sociais", conteudo_social)
-
-show_section("Experiências", conteudo_experiencias)
-
-show_section("Skills", conteudo_skills)
-
-show_section("Projetos Desenvolvidos", conteudo_projetos)
-
-show_section("Qualificações Acadêmicas", conteudo_academico)
 
 # RODAPÉ
 st.write("#")
