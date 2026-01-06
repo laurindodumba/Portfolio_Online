@@ -76,7 +76,8 @@ if pdf_data:
 
 # MÍDIAS SOCIAIS
 st.write("#")
-st.subheader("Mídias Sociais")
+# st.subheader("Mídias Sociais")
+st.markdown('<h3 class="title-line">Mídias Sociais</h3>', unsafe_allow_html=True)
 
 MEDIA_SOCIAL = {
     "LinkedIn": "https://www.linkedin.com/in/laurindo-vilonga-dumba-45b214102/",
@@ -90,7 +91,8 @@ for i, (plat, link) in enumerate(MEDIA_SOCIAL.items()):
 
 # EXPERIÊNCIAS
 st.write("#")
-st.subheader("Experiências")
+# st.subheader("Experiências")
+st.markdown('<h3 class="title-line">Experiências Profissionais</h3>', unsafe_allow_html=True)
 
 st.write("""
 +4 anos de experiência em TI, com foco em:
@@ -103,18 +105,20 @@ st.write("""
 
 # SKILLS
 st.write("#")
-st.subheader("Skills Técnicas")
+# st.subheader("Skills Técnicas")
+st.markdown('<h3 class="title-line">Qualificações Técnicas</h3>', unsafe_allow_html=True)
 
 st.write("""
 - 💻 Linguagens: Python, PySpark, R, SQL, Kotlin  
 - ⚙️ Frameworks: Django, Flask, FastAPI, Jetpack Compose  
-- ☁️ Cloud: Azure, AWS  
+- ☁️ Cloud Computing: Azure, AWS  
 - 🐳 DevOps: Docker, GitHub, Databricks  
 """)
 
 # PROJETOS COM SCROLL LATERAL
 st.write("#")
-st.subheader("Projetos Desenvolvidos")
+# st.subheader("Projetos Desenvolvidos")
+st.markdown('<h3 class="title-line">Projetos Desenvolvidos</h3>', unsafe_allow_html=True)
 
 PROJETOS = {
     "Credit Scoring": "https://github.com/laurindodumba/Risco-de-Credito",
