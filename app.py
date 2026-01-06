@@ -30,19 +30,29 @@ from PIL import Image
 diretorio = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 arquivo_css = diretorio / "styles" / "main.css"
 arquivo_pdf = diretorio / "assets" / "Curriculo.pdf"
+# arquivo_imagem = diretorio / "assets" / "l.png"
+# diretorio = Path(__file__).parent
 arquivo_imagem = diretorio / "assets" / "l.png"
+
+# Converter imagem para base64 corretamente
+with open(arquivo_imagem, "rb") as img_file:
+    encoded = base64.b64encode(img_file.read()).decode()
+
 st.markdown(
     f"""
     <style>
-    .img-redonda {{
+    .img-arredondada {{
         border-radius: 50%;
         width: 200px;
         height: 200px;
         object-fit: cover;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
     }}
     </style>
 
-    <img class="img-redonda" src="data:image/png;base64,{arquivo_imagem.read_bytes().encode('base64').decode()}">
+    <img class="img-arredondada" src="data:image/png;base64,{encoded}">
     """,
     unsafe_allow_html=True
 )
