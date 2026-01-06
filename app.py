@@ -160,11 +160,21 @@ st.markdown('<h3 class="title-line">Qualificações Acadêmicas</h3>', unsafe_al
 st.write("""
 🎓 Engenheiro de Controle e Automação  
 
+
 🎓 Pós em Ciência de Dados e Big Data  
 
-🎓 Pós Graduando em Inteligência Artificial
+
+🎓 Pós Graduado em Inteligência Artificial
+
+
+🎯 Pós Graduando em Programação para Dispósitivos Móveis
+
+
+🎯 Pós Graduando em Internet das Coisas - IOT
+
 
 🎓 Mestrando em Ciência da Computação Aplicada  
+
 """)
 
 # RODAPÉ
