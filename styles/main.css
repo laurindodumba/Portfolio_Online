@@ -1,0 +1,13 @@
+.section-circle {
+    border-radius: 50px;
+    border: 2px solid #0e76a8;
+    padding: 25px;
+    margin-bottom: 30px;
+    background-color: #f0f2f6;
+}
+
+.section-title {
+    text-align: center;
+    color: #0e76a8;
+    margin-bottom: 10px;
+}
