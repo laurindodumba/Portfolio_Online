@@ -2,6 +2,13 @@ from pathlib import Path
 import streamlit as st
 import base64
 
+def start_rounded_section(title):
+    st.markdown(f'<div class="rounded-box">', unsafe_allow_html=True)
+    st.markdown(f'<h3 class="title-line">{title}</h3>', unsafe_allow_html=True)
+
+def end_rounded_section():
+    st.markdown('</div>', unsafe_allow_html=True)
+
 # ---------- CONFIGURAÇÕES E CAMINHOS ----------
 
 diretorio = Path(__file__).parent if "__file__" in locals() else Path.cwd()
@@ -79,6 +86,9 @@ st.write("#")
 # st.subheader("Mídias Sociais")
 st.markdown('<h3 class="title-line">Mídias Sociais</h3>', unsafe_allow_html=True)
 
+st.write("#")
+start_rounded_section("Mídias Sociais")
+
 MEDIA_SOCIAL = {
     "LinkedIn": "https://www.linkedin.com/in/laurindo-vilonga-dumba-45b214102/",
     "Medium": "https://medium.com/@dumbalvd",
@@ -88,6 +98,9 @@ MEDIA_SOCIAL = {
 cols = st.columns(len(MEDIA_SOCIAL))
 for i, (plat, link) in enumerate(MEDIA_SOCIAL.items()):
     cols[i].markdown(f"[{plat}]({link})")
+
+end_rounded_section()
+
 
 # EXPERIÊNCIAS
 st.write("#")
