@@ -59,8 +59,8 @@ pdf_data = load_pdf(arquivo_pdf)
 # CABEÇALHO COM IMAGEM
 show_rounded_image(arquivo_imagem)
 
-st.title("Laurindo Dumba")
-st.center
+st.markdown("<h1 style='text-align: center;'>Laurindo Dumba</h1>", unsafe_allow_html=True)
+
 
 st.write("""
 Engenharia de Dados | Machine Learning | Desenvolvimento Mobile
