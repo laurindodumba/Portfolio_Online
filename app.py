@@ -1,6 +1,7 @@
-Em volta de todo conteudo cria um circulo arrendondado , from pathlib import Path
+from pathlib import Path
 import streamlit as st
 import base64
+from PIL import Image
 
 # ---------- CONFIGURAÇÕES E CAMINHOS ----------
 
@@ -76,8 +77,7 @@ if pdf_data:
 
 # MÍDIAS SOCIAIS
 st.write("#")
-# st.subheader("Mídias Sociais")
-st.markdown('<h3 class="title-line">Mídias Sociais</h3>', unsafe_allow_html=True)
+st.subheader("Mídias Sociais")
 
 MEDIA_SOCIAL = {
     "LinkedIn": "https://www.linkedin.com/in/laurindo-vilonga-dumba-45b214102/",
@@ -91,34 +91,31 @@ for i, (plat, link) in enumerate(MEDIA_SOCIAL.items()):
 
 # EXPERIÊNCIAS
 st.write("#")
-# st.subheader("Experiências")
-st.markdown('<h3 class="title-line">Experiências Profissionais</h3>', unsafe_allow_html=True)
+st.subheader("Experiências Profissionais")
 
 st.write("""
-+4 anos de experiência em TI, com foco em:
++4 anos de experiência em TI, atuando principalmente em:
 
 ⭐ Engenharia de Dados  
 ⭐ Machine Learning  
 ⭐ Desenvolvimento Mobile  
-⭐ Cloud Computing (Azure & AWS)
+⭐ Cloud Computing  
 """)
 
 # SKILLS
 st.write("#")
-# st.subheader("Skills Técnicas")
-st.markdown('<h3 class="title-line">Qualificações Técnicas</h3>', unsafe_allow_html=True)
+st.subheader("Qualificações Técnicas")
 
 st.write("""
 - 💻 Linguagens: Python, PySpark, R, SQL, Kotlin  
 - ⚙️ Frameworks: Django, Flask, FastAPI, Jetpack Compose  
-- ☁️ Cloud Computing: Azure, AWS  
+- ☁️ Cloud: Azure, AWS  
 - 🐳 DevOps: Docker, GitHub, Databricks  
 """)
 
-# PROJETOS COM SCROLL LATERAL
+# PROJETOS
 st.write("#")
-# st.subheader("Projetos Desenvolvidos")
-st.markdown('<h3 class="title-line">Projetos Desenvolvidos</h3>', unsafe_allow_html=True)
+st.subheader("Projetos Desenvolvidos")
 
 PROJETOS = {
     "Credit Scoring": "https://github.com/laurindodumba/Risco-de-Credito",
@@ -150,24 +147,18 @@ with st.container():
 
 # QUALIFICAÇÕES ACADÊMICAS
 st.write("#")
-# st.subheader("Qualificações Acadêmicas")
-st.markdown('<h3 class="title-line">Qualificações Acadêmicas</h3>', unsafe_allow_html=True)
-
+st.subheader("Qualificações Acadêmicas")
 
 st.write("""
 🎓 Engenheiro de Controle e Automação  
 
 🎓 Pós em Ciência de Dados e Big Data  
 
-🎓 Pós em Inteligência Artificial  
+🎓 Pós Graduando em Inteligência Artificial
 
-🎯 Pós Graduando em Programação para Dispósitivos Móveis
-
-🎯 Pós Graduando em Internet das Coisas - IOT
-
-🎓 Mestrando em Ciência da Computação  
+🎓 Mestrando em Ciência da Computação Aplicada  
 """)
 
-# # RODAPÉ
-# st.write("#")
-# st.caption("© 2024 - Portfólio Online de Laurindo Dumba")
+# RODAPÉ
+st.write("#")
+st.caption("© 2024 - Portfólio Online de Laurindo Dumba")
