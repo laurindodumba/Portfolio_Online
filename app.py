@@ -146,15 +146,24 @@ with st.container():
 
 # QUALIFICAÇÕES ACADÊMICAS
 st.write("#")
-st.subheader("Qualificações Acadêmicas")
+# st.subheader("Qualificações Acadêmicas")
+st.markdown('<h3 class="title-line">Qualificações Acadêmicas</h3>', unsafe_allow_html=True)
+
 
 st.write("""
 🎓 Engenheiro de Controle e Automação  
+
 🎓 Pós em Ciência de Dados e Big Data  
+
 🎓 Pós em Inteligência Artificial  
+
+🎯 Pós Graduando em Programação para Dispósitivos Móveis
+
+🎯 Pós Graduando em Internet das Coisas - IOT
+
 🎓 Mestrando em Ciência da Computação  
 """)
 
-# RODAPÉ
-st.write("#")
-st.caption("© 2024 - Portfólio Online de Laurindo Dumba")
+# # RODAPÉ
+# st.write("#")
+# st.caption("© 2024 - Portfólio Online de Laurindo Dumba")
