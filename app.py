@@ -31,14 +31,28 @@ diretorio = Path(__file__).parent if "__file__" in locals() else Path.cwd()
 arquivo_css = diretorio / "styles" / "main.css"
 arquivo_pdf = diretorio / "assets" / "Curriculo.pdf"
 arquivo_imagem = diretorio / "assets" / "l.png"
+st.markdown(
+    f"""
+    <style>
+    .img-redonda {{
+        border-radius: 50%;
+        width: 200px;
+        height: 200px;
+        object-fit: cover;
+    }}
+    </style>
 
+    <img class="img-redonda" src="data:image/png;base64,{arquivo_imagem.read_bytes().encode('base64').decode()}">
+    """,
+    unsafe_allow_html=True
+)
 
 #Configurações gerais das informações
 
 TITULO = "Curriculum  | LAURINDO DUMBA"
 NOME = "Laurindo Dumba"
 DESCRIÇÃO = """
- Engenharia de Dados, Machine Leaning e Desenvolvimento Mobile.
+ Engenharia de Dados, Machine Learning e Desenvolvimento Mobile.
 
 """
 
