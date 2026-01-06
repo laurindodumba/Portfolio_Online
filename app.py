@@ -147,7 +147,9 @@ with st.container():
 
 # QUALIFICAÇÕES ACADÊMICAS
 st.write("#")
-st.subheader("Qualificações Acadêmicas")
+# st.subheader("Qualificações Acadêmicas")
+st.markdown('<h3 class="title-line">Qualificações Acadêmicas</h3>', unsafe_allow_html=True)
+
 
 st.write("""
 🎓 Engenheiro de Controle e Automação  
