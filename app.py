@@ -60,6 +60,7 @@ pdf_data = load_pdf(arquivo_pdf)
 show_rounded_image(arquivo_imagem)
 
 st.title("Laurindo Dumba")
+st.center
 
 st.write("""
 Engenharia de Dados | Machine Learning | Desenvolvimento Mobile
